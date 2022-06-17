@@ -1,0 +1,12 @@
+{ 
+  "attributes" : [ {
+    "trait_type" : "Breed",
+    "value" : "eeeee"
+  }, {
+    "trait_type" : "Eye color",
+    "value" : "Mocha"
+  }],
+  "description" : "The wasdawsdr",
+  "image" : "ipfs://QmfFW9gbzyvJnQPtTYg5C5f7sNEGb6AQYESKgXSoDf2uqo",
+  "name" : "nfts2"
+}
