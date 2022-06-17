@@ -45,22 +45,15 @@ export default function Header({ connectKaikas, connectWallet, account, tokenSav
         </Link>
         <Input icon="search" placeholder="Search items, collections, and accounts" style={{ width: "50rem", height: "45px" }} />
         <ul className={styles.nav}>
-          <li>
-            <div>
-              {!isLogin ? (
-                <Label ></Label>
-              ) : walletType === "eth" ? (
-                <Label as="a" color="orange" content="MetaMask" image={metaImageProps} />
-              ) : walletType === "klay" ? (
-                <Label as="a" color="gray" content="Kaikas" image={klayImageProps} />
-              ) : (
-                <Label ></Label>
-              )}
-            </div>
-          </li>
+          
           <li>
             <Link href="https://opensea.io/explore-collections">
               <a>Explore</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://opensea.io/rankings">
+              <a>Stats</a>
             </Link>
           </li>
           <li>
@@ -83,17 +76,7 @@ export default function Header({ connectKaikas, connectWallet, account, tokenSav
               <img className={styles.icon} src="/images/icon_kaikas.png" />
             </div>
           </li>
-          {/* <li>
-            {isLogin ? (
-              <div onClick={loginButton}>
-                <Icon name="sign-out" size="large" />
-              </div>
-            ) : (
-              <div onClick={loginButton}>
-                <Icon name="sign-in" size="large" />
-              </div>
-            )}
-          </li> */}
+          
         </ul>
       </div>
     </div>
